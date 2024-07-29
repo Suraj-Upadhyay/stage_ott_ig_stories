@@ -89,12 +89,9 @@ const StoryView = ({ display, hideStory }: StoryViewProps) => {
               time={storyDuration}
             />
           </div>
-          <div
-            onClick={hideStory}
-            className="absolute top-5 right-1 text-white text-3xl"
-          >
+          <div className="absolute top-5 right-1 text-white text-3xl">
             <IoEllipsisHorizontal className="inline-block text-xl m-1" />
-            <IoCloseSharp className="inline-block m-1" />
+            <IoCloseSharp onClick={hideStory} className="inline-block m-1" />
           </div>
           <div className="center w-[80%] h-[85%] bg-red-400"></div>
         </>
@@ -133,8 +130,8 @@ const StoryLine = () => {
 
 export default function Home() {
   return (
-    <main className="relative h-screen w-screen bg-white">
-      <div className="h-full w-full sm:w-[630px] centerx bg-black">
+    <main className="relative flex justify-center h-screen w-screen bg-black">
+      <div className="h-full w-full sm:w-[630px] bg-black">
         <StoryLine />
       </div>
     </main>
