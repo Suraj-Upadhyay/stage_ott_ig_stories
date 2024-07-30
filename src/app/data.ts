@@ -112,4 +112,4 @@ storyLine = {
   stories: stories
 };
 
-export { storyLine };
+export { storyLine, profileData };
