@@ -17,7 +17,26 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @layer utilities {
+  .center {
+    @apply absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]
+  }
+  .centerx {
+    @apply absolute left-[50%] -translate-x-[50%]
+  }
+  .centery {
+    @apply absolute top-[50%] -translate-y-[50%]
+  }
+  .ig-gradient {
+    @apply bg-gradient-to-tr from-[#f09433] via-[#e6683c] via-50% via-[#dc2743] via-60% via-[#cc2366] via-80% to-[#bc1888]
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
